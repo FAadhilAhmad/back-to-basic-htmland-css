@@ -1,0 +1,166 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.container{
+    display: grid;
+    grid-template-areas: "blok1 blok2 blok3 blok4"
+                         "blok5 blok6 blok7 blok8"
+                         "blok9 blok10 . .";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    width: 100% 100%;
+    height: 100vh;
+    padding: 10px;
+    margin: 20px;
+}
+.blok1{
+    grid-area: blok1;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.blok1 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.blok2{
+    grid-area: blok2;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.blok2 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.blok3{
+    grid-area: blok3;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.blok3 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.blok4{
+    grid-area: blok4;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blok5{
+    grid-area: blok5;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blok6{
+    grid-area: blok6;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blok7{
+    grid-area: blok7;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blok8{
+    grid-area: blok8;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blok9{
+    grid-area: blok9;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blok10{
+    grid-area: blok10;
+    background-color: #3c8454;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
