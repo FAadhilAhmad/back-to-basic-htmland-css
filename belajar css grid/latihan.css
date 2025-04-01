@@ -12,13 +12,13 @@ body{
     grid-template-areas: "blok1 blok2 blok3 blok4"
                          "blok5 blok6 blok7 blok8"
                          "blok9 blok10 . .";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: auto auto auto;
-    gap: 5px;
-    width: 100% 100%;
-    height: 100vh;
+    gap: 0px;
+    width: auto;
+    height: auto;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
 }
 .blok1{
     grid-area: blok1;
@@ -33,6 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .blok1 img{
     width: 250px;
@@ -53,6 +54,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .blok2 img{
     width: 250px;
@@ -73,6 +75,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .blok3 img{
     width: 250px;
@@ -89,8 +92,17 @@ body{
     text-align: center;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.blok4 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .blok5{
     grid-area: blok5;
@@ -101,8 +113,17 @@ body{
     text-align: center;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.blok5 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .blok6{
     grid-area: blok6;
@@ -113,8 +134,17 @@ body{
     text-align: center;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.blok6 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .blok7{
     grid-area: blok7;
@@ -125,8 +155,17 @@ body{
     text-align: center;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.blok7 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .blok8{
     grid-area: blok8;
@@ -139,6 +178,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .blok9{
     grid-area: blok9;
@@ -151,6 +191,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .blok10{
     grid-area: blok10;
@@ -163,4 +204,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
 }
