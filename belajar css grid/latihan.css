@@ -9,9 +9,11 @@ body{
 }
 .container{
     display: grid;
-    grid-template-areas: "blok1 blok2 blok3 blok4"
+    grid-template-areas:"header header header header"
+                         "blok1 blok2 blok3 blok4"
                          "blok5 blok6 blok7 blok8"
-                         "blok9 blok10 . .";
+                         "blok9 blok10 . ."
+                         "footer footer footer footer";
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: auto auto auto;
     gap: 0px;
@@ -19,6 +21,13 @@ body{
     height: auto;
     padding: 10px;
     margin: 10px;
+}
+.header{
+    background-color: rgb(128, 128, 250);
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    grid-area: header;
 }
 .blok1{
     grid-area: blok1;
@@ -176,9 +185,17 @@ body{
     text-align: center;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5px;
+}
+.blok8 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .blok9{
     grid-area: blok9;
@@ -189,9 +206,16 @@ body{
     text-align: center;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+.blok9 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .blok10{
     grid-area: blok10;
@@ -205,6 +229,21 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5px;
+}
+.blok10 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+footer{
+    grid-area: footer;
+    color: white;
+    background-color: #333;
+    padding: 50px;
+    display: flex;
+    
 }
 @media screen and (max-width: 500px){
     .container{
