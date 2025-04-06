@@ -9,18 +9,18 @@ body{
 }
 .container{
     display: grid;
-    grid-template-areas:"header header header header"
-                         "blok1 blok2 blok3 blok4"
-                         "blok5 blok6 blok7 blok8"
-                         "blok9 blok10 . ."
-                         "footer footer footer footer";
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:"header header header"
+                         "blok1 blok2 blok3"
+                         "blok4 blok5 blok6"
+                         "blok7 blok8 blok9"
+                         "blok10 . ."
+                         "footer footer footer";
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
     grid-template-rows: auto auto auto;
     gap: 0px;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    margin: 10px;
+    min-width: 500px;
+    padding: 20px;
+    margin: 20px;
 }
 .header{
     background-color: rgb(128, 128, 250);
@@ -237,17 +237,18 @@ body{
     border-radius: 10px;
     object-fit: cover;
 }
-footer{
+.footer{
     grid-area: footer;
-    color: white;
     background-color: #333;
+    color: white;
     padding: 50px;
-    display: flex;
-    
+    text-align: center;
+    border-radius: 10px;
 }
 @media screen and (max-width: 500px){
     .container{
         display: flex;
         flex-direction: column;
+        min-width: 200px;
     }
 }
